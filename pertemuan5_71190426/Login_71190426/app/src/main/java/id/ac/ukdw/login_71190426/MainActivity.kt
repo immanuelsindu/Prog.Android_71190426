@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import androidx.core.widget.addTextChangedListener
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,6 +19,9 @@ class MainActivity : AppCompatActivity() {
         val button_login = findViewById<Button>(R.id.button_login)
         val textVerifikasi = findViewById<TextView>(R.id.textView_verifikasi)
 
+        edtPassword.addTextChangedListener {
+            textVerifikasi.text = ""
+        }
 
         button_login.setOnClickListener {
             if(edtPassword.text.toString() == "1234"){
