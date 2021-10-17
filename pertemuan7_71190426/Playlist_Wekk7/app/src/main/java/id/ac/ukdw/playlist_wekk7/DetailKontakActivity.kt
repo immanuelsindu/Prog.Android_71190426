@@ -13,20 +13,18 @@ class DetailKontakActivity : AppCompatActivity() {
     override fun onCreate(savedInstancesStage: Bundle? ){
         super.onCreate(savedInstancesStage)
         setContentView(R.layout.detail_kontak)
-
-        val nomerhp = intent.getStringExtra("Nomor")
-        val nama = intent.getStringExtra("Nama")
-        val cover = intent.getStringExtra("Cover")
-        cover.toString().toInt()
-
-
-
-        val gambarPengguna = findViewById<ImageView>(R.id.imageView3)
-        val nomorhp2 = findViewById<TextView>(R.id.textView)
-        val nama2 = findViewById<TextView>(R.id.textView2)
-
-        nomorhp2.text = "Halo"
-        nama2.text = "Halo"
+//
+//        val nomerhp = intent.getStringExtra("Nomor")
+//        val nama = intent.getStringExtra("Nama")
+//        val cover = intent.getStringExtra("Cover")
+//        cover.toString().toInt()
+//
+//        val gambarPengguna = findViewById<ImageView>(R.id.imageView3)
+//        val nomorhp2 = findViewById<TextView>(R.id.textView)
+//        val nama2 = findViewById<TextView>(R.id.textView2)
+//
+//        nomorhp2.text = "Halo"
+//        nama2.text = "Halo"
 
     }
 }
