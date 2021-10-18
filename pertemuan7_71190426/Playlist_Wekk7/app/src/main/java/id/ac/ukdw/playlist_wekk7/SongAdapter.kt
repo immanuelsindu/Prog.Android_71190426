@@ -15,7 +15,7 @@ import android.content.Intent
 import android.widget.LinearLayout
 import androidx.core.content.ContextCompat.startActivity
 
-class SongAdapter(var listSong: ArrayList<Song>, var context: Context): RecyclerView.Adapter<SongAdapter.SongHolder>(){
+class SongAdapter(var listSong: ArrayList<Song>, val context: Context): RecyclerView.Adapter<SongAdapter.SongHolder>(){
     class SongHolder(val view: View) :RecyclerView.ViewHolder(view){
         fun bind(song: Song, context: Context) {
             view.findViewById<ImageView>(R.id.img_cover).setImageResource(song.cover)
@@ -26,8 +26,8 @@ class SongAdapter(var listSong: ArrayList<Song>, var context: Context): Recycler
 
             test.setOnClickListener {
                 val myIntent = Intent(context, DetailKontakActivity::class.java)
-                myIntent.putExtra("Nomer", song.title)
-                myIntent.putExtra("Nama", song.singer)
+                myIntent.putExtra("Nomer", song.singer)
+                myIntent.putExtra("Nama", song.title)
                 myIntent.putExtra("Cover", song.cover)
                 context.startActivity(myIntent)
             }
@@ -41,6 +41,7 @@ class SongAdapter(var listSong: ArrayList<Song>, var context: Context): Recycler
 
     override fun onBindViewHolder(holder: SongHolder, position: Int) {
         holder.bind(listSong[position], context)
+
     }
 
     override fun getItemCount(): Int {
