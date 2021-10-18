@@ -28,7 +28,7 @@ class DetailKontakActivity : AppCompatActivity() {
 
         val nomorhp = getIntent().getStringExtra("Nomer")
         val nama = getIntent().getStringExtra("Nama")
-        val cover = getIntent().getStringExtra("Cover")
+        val cover = getIntent().getIntExtra("Cover",0)
 
         val gambarPengguna = findViewById<ImageView>(R.id.imageView3)
         val nomorhp2 = findViewById<TextView>(R.id.textView2_nomor)
@@ -36,7 +36,7 @@ class DetailKontakActivity : AppCompatActivity() {
 
         nomorhp2.setText(nomorhp)
         nama2.setText(nama)
-
+        gambarPengguna.setImageResource(cover)
 
     }
 }
