@@ -1,5 +1,6 @@
 package id.ac.ukdw.week8_toolbar
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
@@ -19,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(findViewById(R.id.toolbar_default))
         supportActionBar?.setDisplayShowTitleEnabled(false)
 
-        val listFragment = arrayListOf<Fragment>(FragmentSatu() , FragmentDua())
+        val listFragment = arrayListOf<Fragment>(FragmentSatu() , FragmentDua(),FragmentTiga())
         val pager = findViewById<ViewPager2>(R.id.pager)
         val pagerAdapter = PagerAdapter(this,listFragment)
         pager.adapter = pagerAdapter
@@ -32,7 +33,6 @@ class MainActivity : AppCompatActivity() {
         override fun createFragment(position: Int): Fragment = listFragment.get(position)
     }
 
-
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         getMenuInflater().inflate(R.menu.menu_default, menu)
         return true
@@ -40,11 +40,18 @@ class MainActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem) = when (item.itemId) {
         R.id.menu_satu -> {
-            Toast.makeText(this, "Ini Menu Satu", Toast.LENGTH_LONG).show()
+            val pagerlagi = findViewById<ViewPager2>(R.id.pager)
+            pagerlagi.setCurrentItem(0)
             true
         }
         R.id.menu_dua -> {
-            Toast.makeText(this, "Ini Menu Dua", Toast.LENGTH_LONG).show()
+            val pagerlagi = findViewById<ViewPager2>(R.id.pager)
+            pagerlagi.setCurrentItem(1)
+            true
+        }
+        R.id.menu_tiga -> {
+            val pagerlagi = findViewById<ViewPager2>(R.id.pager)
+            pagerlagi.setCurrentItem(2)
             true
         }
         else -> {

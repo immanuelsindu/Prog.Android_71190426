@@ -9,7 +9,13 @@
 
     <item
         android:id="@+id/menu_dua"
-        android:icon="@drawable/ic_satu"
+        android:icon="@drawable/ic_dua"
+        android:title="Menu 2"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/menu_tiga"
+        android:icon="@drawable/ic_tiga"
         android:title="Menu 2"
         app:showAsAction="ifRoom"/>
 
