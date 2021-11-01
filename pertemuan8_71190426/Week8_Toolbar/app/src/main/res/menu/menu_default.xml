@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_satu"
+        android:icon="@drawable/ic_satu"
+        android:title="Menu 1"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/menu_dua"
+        android:icon="@drawable/ic_satu"
+        android:title="Menu 2"
+        app:showAsAction="ifRoom"/>
+
+</menu>
