@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">71190426_Week 9_Shared Prefereces</string>
+    <string-array name="daftar_bahasa">
+        <item>Indonesia</item>
+        <item>Inggris</item>
+        <item>Jepang</item>
+        <item>Korea</item>
+    </string-array>
+</resources>
