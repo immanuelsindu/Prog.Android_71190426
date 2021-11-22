@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="txtColumnNim" type="id" />
+    <item name="txtColumnNama" type="id" />
+    <item name="txtColumnIpk" type="id" />
+    <item name="TxtHasilPencarian" type="id" />
+</resources>
