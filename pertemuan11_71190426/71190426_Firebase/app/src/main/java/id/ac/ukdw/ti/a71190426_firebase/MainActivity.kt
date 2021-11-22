@@ -162,6 +162,31 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+        btnNamaDesc.setOnClickListener {
+            if(listMahasiswa2.isEmpty()){
+                firestore?.collection("Mahasiswa")?.get()?.
+                addOnSuccessListener {hasil->
+                    for (d in hasil){
+//                        txtColumnNIM.setText("${txtColumnNIM.text.toString()} ${d.data["nim"]}\n\n")
+//                        txtColumnNama.setText("${txtColumnNama.text.toString()} ${d.data["nama"]}\n\n")
+//                        txtColumnIpk.setText("${txtColumnIpk.text.toString()} ${d.data["ipk"]}\n\n")
+                        listMahasiswa2.add(Mahasiswa(d.data["nama"] as String,d.data["nim"] as String , d.data["ipk"] as String ))
+                    }
+//                    Toast.makeText(this,"Memproses semua data",Toast.LENGTH_LONG).show()
+                }
+            }
+            val sortedList = listMahasiswa2.sortedWith(compareByDescending { it.nama })
+            txtColumnNIM.setText("")
+            txtColumnNama.setText("")
+            txtColumnIpk.setText("")
+
+            for (d: Mahasiswa in sortedList){
+                txtColumnNIM.setText("${txtColumnNIM.text.toString()} ${d.NIM}\n\n")
+                txtColumnNama.setText("${txtColumnNama.text.toString()} ${d.nama}\n\n")
+                txtColumnIpk.setText("${txtColumnIpk.text.toString()} ${d.IPK}\n\n")
+            }
+        }
+
         btnIPKAsc.setOnClickListener {
             if(listMahasiswa2.isEmpty()){
                 firestore?.collection("Mahasiswa")?.get()?.
@@ -187,6 +212,84 @@ class MainActivity : AppCompatActivity() {
                 txtColumnIpk.setText("${txtColumnIpk.text.toString()} ${d.IPK}\n\n")
             }
         }
+
+        btnNIMAsc.setOnClickListener {
+            if(listMahasiswa2.isEmpty()){
+                firestore?.collection("Mahasiswa")?.get()?.
+                addOnSuccessListener {hasil->
+                    for (d in hasil){
+//                        txtColumnNIM.setText("${txtColumnNIM.text.toString()} ${d.data["nim"]}\n\n")
+//                        txtColumnNama.setText("${txtColumnNama.text.toString()} ${d.data["nama"]}\n\n")
+//                        txtColumnIpk.setText("${txtColumnIpk.text.toString()} ${d.data["ipk"]}\n\n")
+                        listMahasiswa2.add(Mahasiswa(d.data["nama"] as String,d.data["nim"] as String , d.data["ipk"] as String ))
+                    }
+//                    Toast.makeText(this,"Memproses semua data",Toast.LENGTH_LONG).show()
+                }
+            }
+
+            val sortedList = listMahasiswa2.sortedWith(compareBy({it.NIM}))
+            txtColumnNIM.setText("")
+            txtColumnNama.setText("")
+            txtColumnIpk.setText("")
+
+            for (d: Mahasiswa in sortedList){
+                txtColumnNIM.setText("${txtColumnNIM.text.toString()} ${d.NIM}\n\n")
+                txtColumnNama.setText("${txtColumnNama.text.toString()} ${d.nama}\n\n")
+                txtColumnIpk.setText("${txtColumnIpk.text.toString()} ${d.IPK}\n\n")
+            }
+        }
+
+        btnNIMDesc.setOnClickListener {
+            if(listMahasiswa2.isEmpty()){
+                firestore?.collection("Mahasiswa")?.get()?.
+                addOnSuccessListener {hasil->
+                    for (d in hasil){
+//                        txtColumnNIM.setText("${txtColumnNIM.text.toString()} ${d.data["nim"]}\n\n")
+//                        txtColumnNama.setText("${txtColumnNama.text.toString()} ${d.data["nama"]}\n\n")
+//                        txtColumnIpk.setText("${txtColumnIpk.text.toString()} ${d.data["ipk"]}\n\n")
+                        listMahasiswa2.add(Mahasiswa(d.data["nama"] as String,d.data["nim"] as String , d.data["ipk"] as String ))
+                    }
+//                    Toast.makeText(this,"Memproses semua data",Toast.LENGTH_LONG).show()
+                }
+            }
+            val sortedList = listMahasiswa2.sortedWith(compareByDescending { it.NIM })
+            txtColumnNIM.setText("")
+            txtColumnNama.setText("")
+            txtColumnIpk.setText("")
+
+            for (d: Mahasiswa in sortedList){
+                txtColumnNIM.setText("${txtColumnNIM.text.toString()} ${d.NIM}\n\n")
+                txtColumnNama.setText("${txtColumnNama.text.toString()} ${d.nama}\n\n")
+                txtColumnIpk.setText("${txtColumnIpk.text.toString()} ${d.IPK}\n\n")
+            }
+        }
+
+        btnIPKDesc.setOnClickListener {
+            if(listMahasiswa2.isEmpty()){
+                firestore?.collection("Mahasiswa")?.get()?.
+                addOnSuccessListener {hasil->
+                    for (d in hasil){
+//                        txtColumnNIM.setText("${txtColumnNIM.text.toString()} ${d.data["nim"]}\n\n")
+//                        txtColumnNama.setText("${txtColumnNama.text.toString()} ${d.data["nama"]}\n\n")
+//                        txtColumnIpk.setText("${txtColumnIpk.text.toString()} ${d.data["ipk"]}\n\n")
+                        listMahasiswa2.add(Mahasiswa(d.data["nama"] as String,d.data["nim"] as String , d.data["ipk"] as String ))
+                    }
+//                    Toast.makeText(this,"Memproses semua data",Toast.LENGTH_LONG).show()
+                }
+            }
+            val sortedList = listMahasiswa2.sortedWith(compareByDescending { it.IPK })
+            txtColumnNIM.setText("")
+            txtColumnNama.setText("")
+            txtColumnIpk.setText("")
+
+            for (d: Mahasiswa in sortedList){
+                txtColumnNIM.setText("${txtColumnNIM.text.toString()} ${d.NIM}\n\n")
+                txtColumnNama.setText("${txtColumnNama.text.toString()} ${d.nama}\n\n")
+                txtColumnIpk.setText("${txtColumnIpk.text.toString()} ${d.IPK}\n\n")
+            }
+        }
+
+
 
 
 
