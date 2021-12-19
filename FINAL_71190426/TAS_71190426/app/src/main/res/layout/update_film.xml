@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Data"
+        android:textColor="@color/kuning_imdb"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="30dp"
+        android:textStyle="bold"
+
+        />
+
+    <EditText
+        android:id="@+id/update_JudulFilm"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/white"
+        android:text="Spiderman"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+
+
+        />
+
+    <EditText
+        android:id="@+id/update_RatingFilm"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/white"
+        android:text="Rating Film"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+
+
+        />
+
+    <EditText
+        android:id="@+id/update_TanggalRilis"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/white"
+        android:text="Tanggal Rilis"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+
+
+        />
+
+    <EditText
+        android:id="@+id/update_Kategori"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/white"
+        android:text="Kategori"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"
+
+        />
+
+    <Button
+        android:id="@+id/update_btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/kuning_imdb"
+        android:textColor="@color/black"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/update_btnBatal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Batal"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/biru_imdb"
+        android:textColor="@color/black"/>
+
+
+</LinearLayout>

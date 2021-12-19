@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="81dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/imdb2"/>
+
+        <EditText
+            android:id="@+id/edtCariFilm"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Cari Film disini"
+
+            android:textColorHint="@color/white"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="0dp"
+            android:textSize="13sp"
+
+            />
+
+        <Button
+            android:id="@+id/btnCariData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Cari"
+
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtWelcome2"
+            android:textSize="21sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selamat Datang,"
+            android:textColor="@color/white"
+            tools:ignore="InvalidId" />
+
+        <TextView
+            android:id="@+id/txtWelcome"
+            android:textSize="21sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selamat Datang,"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp"
+            tools:ignore="InvalidId" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <Button
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:id="@+id/btnTambahData"
+            android:layout_width="139dp"
+            android:layout_height="50dp"
+            android:text="Tambah Data"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/biru_imdb"
+            android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paling Populer"
+            android:textColor="@color/kuning_imdb"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcyFilm"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

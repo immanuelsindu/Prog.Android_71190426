@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tambah Data"
+        android:textColor="@color/kuning_imdb"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="30dp"
+        />
+
+    <EditText
+        android:id="@+id/edtJudulFilm"
+        android:layout_width="280sp"
+        android:layout_height="wrap_content"
+        android:hint="Masukan Judul Film"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:backgroundTint="@color/white"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/edtRatingFilm"
+        android:layout_width="280sp"
+        android:layout_height="wrap_content"
+        android:hint="Masukan Rating Film"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:backgroundTint="@color/white"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/edtTanggalRilisFilm"
+        android:layout_width="280sp"
+        android:layout_height="wrap_content"
+        android:hint="Masukan Tanggal Rilis"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:backgroundTint="@color/white"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/edtKategoriFilm"
+        android:layout_width="280sp"
+        android:layout_height="wrap_content"
+        android:hint="Masukan Kategori"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:backgroundTint="@color/white"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        />
+
+    <Button
+        android:id="@+id/btnSimpan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Simpan"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/kuning_imdb"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/btnKembaliHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Beranda"
+        android:backgroundTint="@color/biru_imdb"
+        android:layout_gravity="center"/>
+
+
+
+
+</LinearLayout>

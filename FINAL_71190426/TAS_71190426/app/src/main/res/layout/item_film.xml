@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:id="@+id/Layout_ItemFilm"
+
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/itemJudulFilm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spiderman No Way Home"
+            android:textColor="@color/biru_imdb"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textAllCaps="true"
+
+
+            />
+
+        <TextView
+            android:id="@+id/itemTanggalRilis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15 Desember 2021"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/itemKategori"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Action"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/itemRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rating : 10"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/itemBtnHapus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hapus"
+        android:layout_marginLeft="10dp"
+        android:backgroundTint="@color/merah_imdb"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+
+        />
+
+
+
+
+
+</LinearLayout>

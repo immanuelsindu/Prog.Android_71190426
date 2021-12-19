@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#000000</color>
+    <color name="purple_500">#000000</color>
+    <color name="purple_700">#000000</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="biru_google">#3C80F3</color>
+    <color name="kuning_imdb">#F6C700</color>
+    <color name="biru_imdb">#5697ED</color>
+    <color name="merah_imdb">#CF3A3A</color>
+
+</resources>
